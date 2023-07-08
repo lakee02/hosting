@@ -3,7 +3,7 @@ const mongoose=require('mongoose');
 const router = require('./routes/user-routes');
 const blogrouter = require('./routes/blog-routes');
 const app=express();
-const PORT=process.env.PORT;
+const PORT=5000;
 app.use(express.json());
 app.use('/api/user',router);
 app.use('/api/blog',blogrouter)
